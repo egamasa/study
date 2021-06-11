@@ -12,13 +12,13 @@
 <header>
 <div class="container">
 <h1>HTMLを書き換える</h1>
-<h2>取得した要素のコンテンツを書き換える</h2>
+<h2>要素を取得する</h2>
 </div><!-- /.container -->
 </header>
 <main>
 <div class="container">
 <section>
-    <p id="choice">ここに日時を表示します</p>
+  <p id="choice">ここに日時を表示します</p>
 </section>
 </div><!-- /.container -->
 </main>
@@ -28,8 +28,10 @@
 </div><!-- /.container -->
 </footer>
 <script>
-'use strict';
-document.getElementById('choice').textContent = new Date();
+  'use strict';
+  // console.log(document.getElementById('choice'));
+  document.getElementById('choice').textContent = new Date();
+  console.log(document.getElementById('choice').textContent);
 </script>
 </body>
 </html>
